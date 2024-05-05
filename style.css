@@ -1,0 +1,33 @@
+.hide {
+    display: none;
+  }
+  .teams {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  div#team-selection .team {
+    padding: 6px;
+    height: 80px;
+    width: 150px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 2px solid gray;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  div#team-selection .selected-team {
+    border-color: red;
+  }
+  
+  
+  .your-team {
+    text-decoration: underline;
+  }
+   
