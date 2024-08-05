@@ -24,7 +24,7 @@
   }
 
   input[type="text"],input[type="email"],input[type="password"]{
-    font-family:cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
  h1{
