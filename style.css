@@ -21,7 +21,6 @@
     height: auto;
     background-size: cover;
     background-position: 4px;
-    font-family: cursive;
   }
 
   input[type="text"],input[type="email"],input[type="password"]{
