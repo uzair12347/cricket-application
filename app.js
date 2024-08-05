@@ -3,7 +3,7 @@ let yourTeam = "";
 let oponTeam = "";
 let isBatting = null;
 const scoreTypes = ["Catch Out", "Bowled", 0, 1, 2, 3, 4, 5, 6];
-let wicketsRemaining = 2;
+let wicketsRemaining = 0;
 let totalRuns = 0;
 let oppoSelectedTeam = document.getElementById("opon-team");
 let yourSelectedTeam = document.getElementById("your-team");
@@ -11,6 +11,8 @@ let targetSet = 0;
 let isGameWon = false;
 // login and team selection wrapper
 const userInput = document.getElementById("user-name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
 const user = document.getElementById("user");
 const loginSection = document.getElementById("login");
 const teamSelection = document.getElementById("team-selection");
@@ -97,9 +99,9 @@ function playBall() {
   alert(scoreTypes[ballResultIndex]);
 
   if (ballResultIndex === 0 || ballResultIndex === 1) {
-    wicketsRemainingSection.innerText = --wicketsRemaining;
+    wicketsRemainingSection.innerText = ++wicketsRemaining;
 
-    if (wicketsRemaining === 0) {
+    if (wicketsRemaining === 10) {
       if (targetSet > 0) {
         alert("Game finished");
         if (isGameWon) {
@@ -118,7 +120,7 @@ function playBall() {
         targetSet = totalRuns + 1;
         alert("All Out, Target Set For " + targetSet);
         totalRuns = 0;
-        wicketsRemaining = 2;
+        wicketsRemaining = 0;
       }
 
       if (isBatting) {
@@ -155,7 +157,7 @@ function playBall() {
         resultSection.innerText =
           "Congratulation " +
           yourSelectedTeam.innerText.replace("*", "") +
-          " won";
+          " won🎉🎉🎉";
       } else {
         resultSection.innerText =
           "Sadly " + oppoSelectedTeam.innerText.replace("*", "") + " won";
