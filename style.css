@@ -34,6 +34,8 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+      max-width:100%;
+      height:auto;
   }
 
 p{
@@ -66,7 +68,13 @@ p{
     text-decoration: underline;
   }
 
-@media(min-width:992px){
+@media (min-width:1025px)and (max-width:1366px){
+  #team-selection{
+   flex-wrap: wrap;
+  }
+  }
+
+@media(min-width:992px) and (max-width:1024px){
 
   }
    
