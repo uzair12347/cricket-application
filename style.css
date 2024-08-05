@@ -75,10 +75,10 @@ p{
   }
 
   @media (min-width: 576px) and (max-width: 767px) {
-
+  gap:2em;
   }
 
-  @media (max-width: 575px) {
-    
+  @media (min-width:375) and (max-width: 575px) {
+    gap:2em;
   }
    
