@@ -83,10 +83,14 @@ p{
   }
 
   @media (min-width: 576px) and (max-width: 767px) {
-  
+  padding: 20px;
+    margin: 20px;
+    padding-left: 20px;
   }
 
   @media (min-width:375) and (max-width: 575px) {
-
+   padding: 20px;
+    margin: 20px;
+    padding-left: 20px;
   }
    
